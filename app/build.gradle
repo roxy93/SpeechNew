@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.vikramezhil.droidspeechexample"
         minSdkVersion 16
@@ -19,6 +19,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':ds')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':ds')//compile
 }
